@@ -1,12 +1,11 @@
-- 👋 Hi, I’m @efreem12
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
 
-<!---
-efreem12/efreem12 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+import telegram
+
+bot = telegram.Bot(token='የአንተ telegram bot token')
+
+def send_signal(signal):
+    chat_id = 'የአንተ ራስ chat_id ወይም group id'
+    bot.send_message(chat_id=chat_id, text=f'SIGNAL: {signal}')
+
+signal = generate_signal()
+send_signal(signal)
